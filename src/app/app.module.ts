@@ -1,17 +1,19 @@
-import { CoursesService } from './courses.service';
-import { CoursesComponent } from './courses.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { RatingComponent } from './rating/rating.component';
+import { CoursesService } from './courses.service';
+import { CoursesComponent } from './courses.component';
+import { SummaryPipe } from './summary.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
-    RatingComponent
+    RatingComponent,
+    SummaryPipe
   ],
   imports: [
     BrowserModule,

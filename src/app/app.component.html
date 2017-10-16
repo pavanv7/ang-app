@@ -18,5 +18,9 @@
   </li>
 </ul> -->
 <h1>Angular</h1>
+<h1>{{title}}</h1>
+<h3>{{uname}}</h3>
+<input type="text" [(ngModel)]="uname">
 <app-courses></app-courses>
+<app-rating [is-selected]="post.isSelected" (change)="onFavoriteChanged()"></app-rating>
 
