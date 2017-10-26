@@ -20,7 +20,11 @@
 <h1>Angular</h1>
 <h1>{{title}}</h1>
 <h3>{{uname}}</h3>
+<nav>
+<a routerLink = "/rating" routerLinkActive="active">Rating</a>
+<a routerLink = "/courses" routerLinkActive="active">Courses</a>
+</nav>
 <input type="text" [(ngModel)]="uname">
-<app-courses></app-courses>
-<app-rating [is-selected]="post.isSelected" (change)="onFavoriteChanged()"></app-rating>
-
+<!-- <app-courses></app-courses> -->
+<!-- <app-rating [is-selected]="post.isSelected" (change)="onFavoriteChanged()"></app-rating> -->
+<router-outlet></router-outlet>
